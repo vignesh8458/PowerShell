@@ -1,4 +1,5 @@
-$Logfile = "C:\Scripts-Logs\$(get-date -f dd-MM).log"
+New-Item -Type Directory -Path "C:\Intune-Scripts-Logs"
+$Logfile = "C:\Intune-Scripts-Logs\$(get-date -f dd-MM).log"
 
 Function LogWrite
 {
